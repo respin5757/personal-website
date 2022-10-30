@@ -3,20 +3,39 @@ body {
     background: #f5f5f5;
     text-align: center;
 }
+.fa{
+  padding-top: 500;
+  padding-right: 30;
+  font-size: 30px;
+  width: 50px;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #0072b1;
+  color: white;
+}
+.fa-github {
+  background: #171515;
+  color: white;
+}
 
-
-  .topnav a {
-    float: right;
-    color: rgb(105,105,105);
-    text-align: center;
-    padding: 25px 20px;
-    text-decoration: none;
-    font-size: 20px;
+.topnav a {
+  float: right;
+  color: rgb(105,105,105);
+  text-align: center;
+  padding: 25px 38px;
+  text-decoration: none;
+  font-size: 20px;
   }
   
-  .topnav a:hover {
-    color: black;
-  }
-  .topnav a.active {
-    color: black;
-  }
+.topnav a:hover {
+  color: black;
+}
+.topnav a.active {
+  color: black;
+}
