@@ -22,7 +22,11 @@ body {
   background: #171515;
   color: white;
 }
-
+#handsomeboy{
+  border-radius: 50%;
+  width: 150px;
+  height:auto;
+}
 
 .topnav a {
   float: right;
