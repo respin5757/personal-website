@@ -78,7 +78,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 4vw;
   position:fixed;
-  top:40%;
+  top:30%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
@@ -89,7 +89,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 1.5vw;
   position:fixed;
-  top:55%;
+  top:45%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
@@ -97,6 +97,28 @@ footer{
   -o-animation: fadein 2s; 
 }
 
+#apptitle1 {
+  font-family: Lucida Bright,Georgia,serif; 
+  font-size: 4vw;
+  position:fixed;
+  top:50%;
+  left:10%;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+}
+#appmessage1 {
+  font-family: Lucida Bright,Georgia,serif; 
+  font-size: 1.5vw;
+  position:fixed;
+  top:65%;
+  left:10%;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+}
 
 img {
   border: 3px solid rgb(0, 0, 0);
