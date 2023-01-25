@@ -78,7 +78,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 4vw;
   position:fixed;
-  top:30%;
+  top:35%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
@@ -89,7 +89,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 1.5vw;
   position:fixed;
-  top:45%;
+  top:50%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
@@ -101,7 +101,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 4vw;
   position:fixed;
-  top:50%;
+  top:55%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
@@ -112,7 +112,7 @@ footer{
   font-family: Lucida Bright,Georgia,serif; 
   font-size: 1.5vw;
   position:fixed;
-  top:65%;
+  top:70%;
   left:10%;
   animation: fadein 2s;
   -moz-animation: fadein 2s; 
