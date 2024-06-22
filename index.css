@@ -175,8 +175,8 @@
   padding-top: var(--dl-space-space-oneandhalfunits);
 }
 .index-text8 {
-  padding-top: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-sixunits);
+  text-align: center;
+  margin-top: 20px;
 }
 @media(max-width: 767px) {
   .index-navbar-interactive {
