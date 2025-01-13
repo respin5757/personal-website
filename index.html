@@ -1,150 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rafael - About Me</title>
-    <meta property="og:title" content="Rafael's Personal Website" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Professional portfolio of Rafael Espinoza, showcasing projects, skills, and a timeline."
+    />
+    <title>Rafael Espinoza | Portfolio</title>
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+    <!-- Tailwind CSS via CDN (for personal/demo use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
+    <!-- Font Awesome (free CDN) -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-ac2csWkKzt6MJsxfr/v8FLhzWhcwn2gpJMFxixqyxPcl5fDClbbJzk9dQZLJ+8svyIDIOiQ4SrdtT11HFU+N/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
 
-      <div class="index-container">
-        <header data-thq="thq-navbar" class="index-navbar-interactive">
-          <div data-thq="thq-navbar-nav" class="index-desktop-menu">
-            <nav class="index-links">
-              <span>About</span>
-              <a href="Espinoza_Rafael.Resume.pdf" target="_blank" class="index-text1">Resume</a>
-              <a href="work.html" class="index-navlink">Work</a>
-            </nav>
-          </div>
-          <div data-thq="thq-burger-menu" class="index-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="index-icon">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
-          </div>
-          <div data-thq="thq-mobile-menu" class="index-mobile-menu">
-            <div class="index-nav">
-              <div class="index-top">
-                <img
-                  alt="image"
-                  src="rafael-logo.png"
-                  class="index-logo"
-                />
-                <div data-thq="thq-close-menu" class="index-close-menu">
-                  <svg viewBox="0 0 1024 1024" class="index-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <nav class="index-links1">
-                <span>About</span>
-                <a href="Espinoza_Rafael.Resume.pdf" target="_blank" class="index-text1">Resume</a>
-                <a href="work.html" class="index-navlink">Work</a>
-              </nav>
-            </div>
-            <div class="index-container1">
-              <a
-                href="https://www.linkedin.com/in/rafael-espinoza-2001/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="index-link"
-              >
-                <svg viewBox="0 0 877.7142857142857 1024" class="index-icon10">
-                  <path
-                    d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="https://github.com/respin5757"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="index-link1"
-              >
-                <svg viewBox="0 0 877.7142857142857 1024" class="index-icon12">
-                  <path
-                    d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </header>
-        <div class="index-container1">
+    <style>
+      /* Smooth scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- HEADER -->
+    <header class="bg-gray-800 text-white py-10 text-center">
+      <img
+        src="rafael-pic.png"
+        alt="Rafael Espinoza"
+        class="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+      />
+      <h1 class="text-4xl font-bold">Rafael Espinoza</h1>
+      <p class="mt-2 text-lg">
+        Data Analyst | Computer Science Graduate | Insights-Driven Problem Solver
+      </p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-gray-700 text-white py-3">
+      <ul class="flex justify-center space-x-6">
+        <li>
           <a
-            href="https://www.linkedin.com/in/rafael-espinoza-2001/"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="index-link"
+            href="#about"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >About</a
           >
-            <svg viewBox="0 0 877.7142857142857 1024" class="index-icon10">
-              <path
-                d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
-              ></path>
-            </svg>
-          </a>
+        </li>
+        <li>
           <a
-            href="https://github.com/respin5757"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="index-link1"
+            href="#skills"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Skills</a
           >
-            <svg viewBox="0 0 877.7142857142857 1024" class="index-icon12">
-              <path
-                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"
-              ></path>
-            </svg>
-          </a>
-        </div>
-        <img
-          alt="image"
-          src="IMG_4176.png"
-          class="index-image"
-        />
-        <h1 class="index-text7">My name is Rafael Espinoza</h1>
-        <span class="index-text8">
-          Computer Science BS with a (very surprising) Math minor from Boston College, Class of '24.<br>Aspiring Software Engineer.
-        </span>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#timeline"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Timeline</a
+          >
+        </li>
+        <li>
+          <a
+            href="#certifications"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Certifications</a
+          >
+        </li>
+        <li>
+          <a
+            href="Espinoza_Rafael.Resume.pdf"
+            target="_blank"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hover:underline hover:text-gray-300 transition duration-200"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-10 text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <!-- Replace with actual BC logo path -->
+      <img
+        src="Boston_College_Eagles_logo.png"
+        alt="Boston College Logo"
+        class="w-20 h-20 mx-auto my-4"
+      />
+      <p class="max-w-2xl mx-auto px-4 leading-relaxed">
+        I am a first-generation college graduate with a Bachelor of Science
+        in Computer Science and a minor in Mathematics from Boston College.
+        Fluent in Spanish and skilled in data analysis, visualization, and
+        machine learning, I have a passion for leveraging technology to solve
+        complex problems.
+      </p>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-10 bg-gray-50">
+      <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
+      <div class="max-w-6xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4">
+        <!-- SMART CABBIE -->
+        <a
+          href="https://github.com/respin5757/chicago-taxi-analysis"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-taxi text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">Smart Cabbie: Chicago Taxi Analysis</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Analyzed Chicago taxi data using SQL and Python, creating Tableau
+            dashboards to uncover trends and optimize operations. Engineered
+            KPIs like revenue per mile and tip percentage for strategic
+            insights.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">SQL</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">BigQuery</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Pandas</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Tableau</span>
+          </div>
+        </a>
+
+        <!-- LARGE DATA PROCESSING (Replaces Distributed Graph Matching App) -->
+        <a
+          href="https://github.com/george-arianas/Data-Processing-Final-Project"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-network-wired text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">Large Data Processing</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Explored large-scale data processing with distributed computing for
+            improved performance. Focused on algorithms and parallel
+            optimizations.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Scala</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Apache Spark</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Google Cloud</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Parallel Computing</span>
+          </div>
+        </a>
+
+        <!-- SPOOTIFY -->
+        <a
+          href="https://github.com/respin5757/spootify"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-music text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">Spootify</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Built a Python application leveraging the Spotify API to analyze
+            user mood through song data. Achieved 82% accuracy in mood
+            prediction using RandomForestClassifier and created visualizations
+            with Matlab.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Python</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Pandas</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Machine Learning</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">sklearn</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">API Integration</span>
+          </div>
+        </a>
+
+        <!-- ORIGAMI IN MODERN GEOMETRY (PDF Link) -->
+        <a
+          href="BELOCH_FOLD.pdf"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-shapes text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">Origami in Modern Geometry</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Explored the mathematical applications of the Beloch Fold in solving
+            cubic equations. Combined theoretical research and geometric
+            demonstrations to integrate advanced concepts with practical
+            techniques.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Problem-Solving</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">LaTeX</span>
+          </div>
+        </a>
+
+        <!-- NEW BOSTONIA -->
+        <a
+          href="https://github.com/respin5757/New_Bostonia"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-gamepad text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">New Bostonia</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Developed a text-based adventure game in Java featuring dynamic
+            scenarios, inventory management, and design patterns like Singleton
+            and Factory Method.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Java</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">OOP</span>
+          </div>
+        </a>
+
+        <!-- FASHIONISTA -->
+        <a
+          href="https://github.com/GuralTOO/Magic_Mike"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-shirt text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">Fashionista</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Developed a script that trains an RCNN model to segment and classify
+            fashion items. This project involved data preprocessing, model
+            training, and result visualization, highlighting collaboration and
+            the application of machine learning techniques.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Python</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Machine Learning</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Collaboration</span>
+          </div>
+        </a>
       </div>
-    </div>
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-10 bg-white text-center">
+      <h2 class="text-3xl font-semibold mb-6">Core Skills</h2>
+      <p class="max-w-xl mx-auto mb-4 px-4 text-gray-700">
+        Here are some of the most relevant skills for a Data Analyst role,
+        along with soft skills that round out my profile.
+      </p>
+      <!-- Container for skill badges -->
+      <div class="max-w-2xl mx-auto flex flex-wrap justify-center gap-2 px-4">
+        <!-- Hard Skills -->
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Python</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">SQL</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Tableau</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Excel</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">BigQuery</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Machine Learning</span>
+        <!-- Soft Skills -->
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Problem Solving</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Collaboration</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Communication</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Adaptability</span>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="py-10">
+      <h2 class="text-3xl font-semibold text-center mb-6">Timeline</h2>
+      <div class="max-w-4xl mx-auto px-4">
+        <ol class="relative border-l border-gray-200">
+          <!-- Coronado High School -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-school text-blue-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Coronado High School
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >August 2016 - May 2020</time
+            >
+            <p class="text-base text-gray-600">
+              El Paso, TX. Graduated with strong foundations in math and
+              science.
+            </p>
+          </li>
+
+          <!-- Coronado Robotics Club -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-green-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-robot text-green-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Coronado Robotics Club
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Aug 2019 - May 2020</time
+            >
+            <p class="text-base text-gray-600">
+              Collaborated on building robots for yearly competitions using C++.
+            </p>
+          </li>
+
+          <!-- Boston College -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-university text-blue-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Boston College
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >August 2020 - May 2024</time
+            >
+            <p class="text-base text-gray-600">
+              BS in Computer Science, Minor in Mathematics. Involved as AV
+              Tech &amp; in CS Society.
+            </p>
+          </li>
+
+          <!-- Design Engineer Intern -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-drafting-compass text-purple-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Design Engineer Intern
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >June 2021 - Aug 2021</time
+            >
+            <p class="text-base text-gray-600">
+              Advanced Paperworks Inc. Enhanced production designs with AutoCAD,
+              reducing QC errors by 20%.
+            </p>
+          </li>
+
+          <!-- Audio Visual Technician -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-green-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-video text-green-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Audio Visual Technician
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Aug 2021 - May 2024</time
+            >
+            <p class="text-base text-gray-600">
+              Configured and dismantled AV equipment for law school events,
+              diagnosing technical issues.
+            </p>
+          </li>
+
+          <!-- Computer Science Society -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-users text-blue-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Computer Science Society
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Aug 2021 - May 2024</time
+            >
+            <p class="text-base text-gray-600">
+              Marketing &amp; Sponsorship Coordinator. Organized hackathons &amp;
+              built sponsor relationships.
+            </p>
+          </li>
+
+          <!-- Fashionista -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-shirt text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Fashionista
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Jan 2022 - Mar 2022</time
+            >
+            <p class="text-base text-gray-600">
+              Trained an RCNN model to segment and classify fashion items.
+            </p>
+          </li>
+
+          <!-- Spootify -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-music text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">Spootify</h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Aug 2022 - Oct 2022</time
+            >
+            <p class="text-base text-gray-600">
+              Built a Spotify-based mood prediction model (Python, Pandas,
+              sklearn).
+            </p>
+          </li>
+
+          <!-- New Bostonia -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-gamepad text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              New Bostonia
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Nov 2023 - Dec 2023</time
+            >
+            <p class="text-base text-gray-600">
+              Text-based adventure in Java with OOP design patterns.
+            </p>
+          </li>
+
+          <!-- Origami in Modern Geometry -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-shapes text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Origami in Modern Geometry
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Mar 2024 - May 2024</time
+            >
+            <p class="text-base text-gray-600">
+              Explored the Beloch Fold for solving cubic equations, merging
+              theory with geometric demos.
+            </p>
+          </li>
+
+          <!-- Large Data Processing (Under Timeline as well if needed) -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-network-wired text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">
+              Large Data Processing
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Mar 2024 - May 2024</time
+            >
+            <p class="text-base text-gray-600">
+              Explored parallel computing methods for large-scale data
+              processing using Spark &amp; Scala.
+            </p>
+          </li>
+
+          <!-- Smart Cabbie -->
+          <li class="mb-10 ml-6">
+            <span
+              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-yellow-100 rounded-full ring-8 ring-white"
+            >
+              <i class="fa-solid fa-taxi text-yellow-600 text-sm"></i>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900">Smart Cabbie</h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+              >Nov 2024 - Dec 2024</time
+            >
+            <p class="text-base text-gray-600">
+              Analyzed Chicago taxi data with SQL/Python &amp; Tableau
+              dashboards for strategic insights.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="py-10 bg-gray-50">
+      <h2 class="text-3xl font-semibold text-center mb-6">Certifications</h2>
+      <div class="max-w-3xl mx-auto px-4">
+        <!-- Advanced SQL -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
+          <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-semibold">Advanced SQL for Data Scientists</h3>
+            <p class="text-sm text-gray-600">Issued Oct 2024</p>
+            <p class="text-xs text-gray-500">Skills: SQL · Data Science</p>
+          </div>
+        </div>
+
+        <!-- Career Essentials -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
+          <i class="fa-brands fa-microsoft text-3xl text-blue-800 mr-4"></i>
+          <div>
+            <h3 class="font-semibold">
+              Career Essentials in Data Analysis by Microsoft and LinkedIn
+            </h3>
+            <p class="text-sm text-gray-600">Issued Oct 2024</p>
+            <p class="text-xs text-gray-500">
+              Skills: Data Visualization · Data Analysis · Financial Analysis ·
+              Data Analytics · Data Science · Microsoft Excel
+            </p>
+          </div>
+        </div>
+
+        <!-- Tableau Essential Training -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
+          <i class="fa-solid fa-chart-bar text-3xl text-purple-500 mr-4"></i>
+          <div>
+            <h3 class="font-semibold">Tableau Essential Training</h3>
+            <p class="text-sm text-gray-600">Issued Oct 2024</p>
+            <p class="text-xs text-gray-500">Skills: Tableau · Data Science</p>
+          </div>
+        </div>
+
+        <!-- Python Data Structures -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
+          <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-semibold">Python Data Structures and Algorithms</h3>
+            <p class="text-sm text-gray-600">Issued Feb 2023</p>
+            <p class="text-xs text-gray-500">Skills: Algorithms · Data Structures</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-gray-800 text-white py-6 text-center mt-10">
+      <p class="mb-2">
+        Contact:
+        <a
+          href="mailto:rafa3l.espinoza@gmail.com"
+          class="underline hover:text-gray-400 transition"
+          >rafa3l.espinoza@gmail.com</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://linkedin.com/in/rafael-espinoza-2001/"
+          class="underline hover:text-gray-400 transition"
+          >LinkedIn</a
+        >
+        |
+        <a
+          href="https://github.com/respin5757"
+          class="underline hover:text-gray-400 transition"
+          >GitHub</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
