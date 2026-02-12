@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Professional portfolio of Rafael Espinoza, showcasing projects, skills, and a concise timeline."
@@ -25,7 +22,6 @@
     />
 
     <style>
-      /* Smooth scrolling for anchor links */
       html {
         scroll-behavior: smooth;
       }
@@ -42,7 +38,7 @@
       />
       <h1 class="text-4xl font-bold">Rafael Espinoza</h1>
       <p class="mt-2 text-lg">
-        Data Analyst | Computer Science Graduate | Insights-Driven Problem Solver
+        Data Analytics Consultant | Computer Science Graduate | Insights-Driven Problem Solver
       </p>
     </header>
 
@@ -105,15 +101,12 @@
     <!-- ABOUT -->
     <section id="about" class="py-10 text-center">
       <h2 class="text-3xl font-semibold mb-6">About Me</h2>
-      <!-- Logo Wrap: Force width but let height adjust automatically -->
       <div class="flex justify-center space-x-8 my-4">
-        <!-- Boston College Logo -->
         <img
           src="Boston_College_Eagles_logo.png"
           alt="Boston College Logo"
           class="w-20 h-auto object-contain"
         />
-        <!-- Guidehouse Logo (slightly wider to preserve aspect ratio) -->
         <img
           src="Guidehouse_Logo.png"
           alt="Guidehouse Logo"
@@ -126,6 +119,8 @@
         Currently, I work as a
         <strong>Data Analytics Consultant at Guidehouse</strong>, where I
         specialize in <strong>SQL, data cleaning, and financial data analysis</strong>.
+        I enjoy building reliable analytics workflows—cleaning and validating data,
+        modeling it into decision-ready datasets, and delivering outputs that stakeholders trust.
         Fluent in Spanish and skilled in data analysis, visualization, and
         machine learning, I have a passion for leveraging technology to
         solve complex problems.
@@ -138,6 +133,33 @@
       <div
         class="max-w-6xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4"
       >
+        <!-- STREAMWATCH (NEW) -->
+        <a
+          href="https://github.com/respin5757/streamwatch"
+          target="_blank"
+          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+        >
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-tv text-3xl text-gray-600"></i>
+            <h3 class="text-xl font-semibold">StreamWatch</h3>
+          </div>
+          <p class="mt-2 text-sm">
+            Built an end-to-end forecasting pipeline predicting weekly TV show popularity
+            across multiple horizons (ingestion → training → serving). Orchestrated Dockerized
+            Airflow retraining and published versioned datasets/models to Google Cloud Storage.
+            Implemented a manifest-driven training–serving contract and monitored RMSE/R² stability.
+          </p>
+          <div class="mt-3 space-x-2">
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Python</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">SQL</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Airflow</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Docker</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">LightGBM</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">GCS</span>
+            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Streamlit</span>
+          </div>
+        </a>
+
         <!-- SMART CABBIE -->
         <a
           href="https://github.com/respin5757/chicago-taxi-analysis"
@@ -342,53 +364,31 @@
     <section id="skills" class="py-10 bg-white text-center">
       <h2 class="text-3xl font-semibold mb-6">Core Skills</h2>
       <p class="max-w-xl mx-auto mb-4 px-4 text-gray-700">
-        Here are some of the most relevant skills for a Data Analyst role,
+        Here are some of the most relevant skills for analytics engineering / data analytics work,
         along with soft skills that round out my profile.
       </p>
-      <!-- Container for skill badges -->
+
       <div class="max-w-2xl mx-auto flex flex-wrap justify-center gap-2 px-4">
         <!-- Hard Skills -->
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Python</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >SQL</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Tableau</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Excel</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >BigQuery</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Machine Learning</span
-        >
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Python</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">SQL</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Data Modeling</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Data Quality</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">ETL / ELT</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">BigQuery</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Airflow</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Docker</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">dbt</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Tableau</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Excel</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Streamlit</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Machine Learning</span>
+
         <!-- Soft Skills -->
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Problem Solving</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Collaboration</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Communication</span
-        >
-        <span
-          class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full"
-          >Adaptability</span
-        >
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Problem Solving</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Collaboration</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Communication</span>
+        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Adaptability</span>
       </div>
     </section>
 
@@ -407,12 +407,11 @@
             <h3 class="mb-1 text-lg font-semibold text-gray-900">
               Boston College
             </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
               >August 2020 - May 2024</time
             >
             <p class="text-base text-gray-600">
-              Graduated with a BS in Computer Science and Minor in Math.  
+              Graduated with a BS in Computer Science and Minor in Math.
               Involved as AV Tech &amp; in the CS Society.
             </p>
           </li>
@@ -427,12 +426,11 @@
             <h3 class="mb-1 text-lg font-semibold text-gray-900">
               Design Engineer Intern
             </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
               >June 2021 - Aug 2021</time
             >
             <p class="text-base text-gray-600">
-              Advanced Paperworks Inc. Improved production designs with 
+              Advanced Paperworks Inc. Improved production designs with
               AutoCAD, reducing QC errors by 20%.
             </p>
           </li>
@@ -447,12 +445,11 @@
             <h3 class="mb-1 text-lg font-semibold text-gray-900">
               Audio Visual Technician
             </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
               >Aug 2021 - May 2024</time
             >
             <p class="text-base text-gray-600">
-              Set up/dismantled AV equipment for events, diagnosing 
+              Set up/dismantled AV equipment for events, diagnosing
               technical issues for on-campus conferences.
             </p>
           </li>
@@ -467,8 +464,7 @@
             <h3 class="mb-1 text-lg font-semibold text-gray-900">
               Computer Science Society
             </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
               >Aug 2021 - May 2024</time
             >
             <p class="text-base text-gray-600">
@@ -487,15 +483,14 @@
             <h3 class="mb-1 text-lg font-semibold text-gray-900">
               Data Analytics Consultant
             </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400"
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
               >Feb 2025 - Present</time
             >
             <p class="text-base text-gray-600">
-              Working at <strong>Guidehouse</strong> as a Data Analytics 
+              Working at <strong>Guidehouse</strong> as a Data Analytics
               Consultant, specializing in <strong>SQL, data cleaning,
-              and financial data analysis</strong>. Focused on improving 
-              entity resolution processes and optimizing SQL workflows 
+              and financial data analysis</strong>. Focused on improving
+              entity resolution processes and optimizing SQL workflows
               for critical business audits.
             </p>
           </li>
@@ -507,7 +502,6 @@
     <section id="certifications" class="py-10 bg-gray-50">
       <h2 class="text-3xl font-semibold text-center mb-6">Certifications</h2>
       <div class="max-w-3xl mx-auto px-4">
-        <!-- Advanced SQL -->
         <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
           <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
           <div>
@@ -517,7 +511,6 @@
           </div>
         </div>
 
-        <!-- Career Essentials -->
         <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
           <i class="fa-brands fa-microsoft text-3xl text-blue-800 mr-4"></i>
           <div>
@@ -532,7 +525,6 @@
           </div>
         </div>
 
-        <!-- Tableau Essential Training -->
         <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
           <i class="fa-solid fa-chart-bar text-3xl text-purple-500 mr-4"></i>
           <div>
@@ -542,7 +534,6 @@
           </div>
         </div>
 
-        <!-- Python Data Structures -->
         <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
           <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
           <div>
