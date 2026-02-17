@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Professional portfolio of Rafael Espinoza, showcasing projects, skills, and a concise timeline."
+      content="Rafael Espinoza — Data Analyst / Analytics Engineer portfolio. SQL, Python, Airflow, data modeling, and production-grade analytics workflows."
     />
     <title>Rafael Espinoza | Portfolio</title>
 
@@ -15,8 +15,7 @@
     <!-- Font Awesome (free CDN) -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-ac2csWkKzt6MJsxfr/v8FLhzWhcwn2gpJMFxixqyxPcl5fDClbbJzk9dQZLJ+8svyIDIOiQ4SrdtT11HFU+N/A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -25,549 +24,606 @@
       html {
         scroll-behavior: smooth;
       }
+      /* Subtle, professional background texture */
+      .bg-grid {
+        background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+        background-size: 18px 18px;
+      }
+      /* Better anchor positioning with sticky nav */
+      section {
+        scroll-margin-top: 90px;
+      }
     </style>
   </head>
 
-  <body class="bg-gray-100 text-gray-800">
-    <!-- HEADER -->
-    <header class="bg-gray-800 text-white py-10 text-center">
-      <img
-        src="rafael-pic.png"
-        alt="Rafael Espinoza"
-        class="w-32 h-32 mx-auto rounded-full object-cover mb-4"
-      />
-      <h1 class="text-4xl font-bold">Rafael Espinoza</h1>
-      <p class="mt-2 text-lg">
-        Data Analytics Consultant | Computer Science Graduate | Insights-Driven Problem Solver
-      </p>
-    </header>
+  <body class="bg-slate-50 text-slate-900">
+    <!-- TOP BAR / NAV -->
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="#top" class="flex items-center gap-3">
+          <div class="h-9 w-9 overflow-hidden rounded-full ring-2 ring-slate-200">
+            <img src="rafael-pic.png" alt="Rafael Espinoza" class="h-full w-full object-cover" />
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold">Rafael Espinoza</div>
+            <div class="text-xs text-slate-500">Data Analyst • Analytics Engineer</div>
+          </div>
+        </a>
 
-    <!-- NAVIGATION -->
-    <nav class="bg-gray-700 text-white py-3">
-      <ul class="flex justify-center space-x-6">
-        <li>
-          <a
-            href="#about"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            href="#skills"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >Skills</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >Projects</a
-          >
-        </li>
-        <li>
-          <a
-            href="#timeline"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >Timeline</a
-          >
-        </li>
-        <li>
-          <a
-            href="#certifications"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >Certifications</a
-          >
-        </li>
-        <li>
+        <nav class="hidden items-center gap-5 md:flex">
+          <a href="#about" class="text-sm text-slate-600 hover:text-slate-900">About</a>
+          <a href="#skills" class="text-sm text-slate-600 hover:text-slate-900">Skills</a>
+          <a href="#projects" class="text-sm text-slate-600 hover:text-slate-900">Projects</a>
+          <a href="#experience" class="text-sm text-slate-600 hover:text-slate-900">Experience</a>
+          <a href="#education" class="text-sm text-slate-600 hover:text-slate-900">Education</a>
+          <a href="#contact" class="text-sm text-slate-600 hover:text-slate-900">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
           <a
             href="Espinoza_Rafael.Resume.pdf"
             target="_blank"
-            class="hover:underline hover:text-gray-300 transition duration-200"
+            class="hidden rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50 md:inline-flex"
+            ><i class="fa-regular fa-file-lines mr-2"></i>Resume</a
+          >
+          <a
+            href="https://github.com/respin5757"
+            target="_blank"
+            class="inline-flex rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+            ><i class="fa-brands fa-github mr-2"></i>GitHub</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="md:hidden border-t border-slate-200/70">
+        <div class="mx-auto max-w-6xl px-4 py-2 flex gap-4 overflow-x-auto text-sm">
+          <a href="#about" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">About</a>
+          <a href="#skills" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">Skills</a>
+          <a href="#projects" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">Projects</a>
+          <a href="#experience" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">Experience</a>
+          <a href="#education" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">Education</a>
+          <a
+            href="Espinoza_Rafael.Resume.pdf"
+            target="_blank"
+            class="text-slate-600 hover:text-slate-900 whitespace-nowrap"
             >Resume</a
           >
-        </li>
-        <li>
+          <a href="#contact" class="text-slate-600 hover:text-slate-900 whitespace-nowrap">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top" class="bg-grid">
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+          <div class="absolute -top-32 left-1/2 h-72 w-[44rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-sky-200 via-indigo-200 to-emerald-200 blur-3xl opacity-70"></div>
+        </div>
+
+        <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+          <div class="grid gap-10 md:grid-cols-12 md:items-center">
+            <div class="md:col-span-8">
+              <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700">
+                <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                Open to Data Analyst / Analytics Engineer roles
+              </div>
+
+              <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
+                I build trustworthy analytics systems—
+                <span class="text-slate-700">from ingestion to decision-ready data.</span>
+              </h1>
+
+              <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-700 md:text-lg">
+                Data Analytics Consultant at Guidehouse with strong <span class="font-semibold">SQL + Python</span> fundamentals and hands-on ownership of
+                <span class="font-semibold">data ingestion, validation, modeling, and delivery</span> under accuracy and compliance constraints.
+              </p>
+
+              <div class="mt-6 grid gap-3 sm:grid-cols-3">
+                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                  <div class="text-sm font-semibold text-slate-900">3M+ records / month</div>
+                  <div class="text-xs text-slate-600">Batch workflows across 9 clients</div>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                  <div class="text-sm font-semibold text-slate-900">70% faster delivery</div>
+                  <div class="text-xs text-slate-600">Audit/compliance turnaround</div>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                  <div class="text-sm font-semibold text-slate-900">99% accuracy</div>
+                  <div class="text-xs text-slate-600">Entity matching validation logic</div>
+                </div>
+              </div>
+
+              <div class="mt-7 flex flex-wrap items-center gap-3">
+                <a
+                  href="Espinoza_Rafael.Resume.pdf"
+                  target="_blank"
+                  class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+                >
+                  <i class="fa-regular fa-file-lines mr-2"></i>View Resume
+                </a>
+                <a
+                  href="https://linkedin.com/in/rafael-espinoza-2001/"
+                  target="_blank"
+                  class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
+                >
+                  <i class="fa-brands fa-linkedin mr-2 text-blue-600"></i>LinkedIn
+                </a>
+                <a
+                  href="#projects"
+                  class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
+                >
+                  <i class="fa-solid fa-diagram-project mr-2 text-slate-600"></i>Projects
+                </a>
+              </div>
+
+              <div class="mt-6 flex items-center gap-4">
+                <div class="flex items-center gap-3">
+                  <img src="Boston_College_Eagles_logo.png" alt="Boston College Logo" class="h-8 w-auto object-contain" />
+                  <img src="Guidehouse_Logo.png" alt="Guidehouse Logo" class="h-7 w-auto object-contain" />
+                </div>
+                <div class="text-sm text-slate-600">
+                  Cambridge, MA • <a class="underline hover:text-slate-900" href="mailto:rafa3l.espinoza@gmail.com">rafa3l.espinoza@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-4">
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm">
+                <div class="flex items-center gap-4">
+                  <div class="h-16 w-16 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                    <img src="rafael-pic.png" alt="Rafael Espinoza" class="h-full w-full object-cover" />
+                  </div>
+                  <div>
+                    <div class="text-lg font-bold">Rafael Espinoza</div>
+                    <div class="text-sm text-slate-600">Data Analytics Consultant</div>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-2 text-sm text-slate-700">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-emerald-600"></i>
+                    <span>Production-minded: quality checks, repeatability, auditability</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code text-slate-700"></i>
+                    <span>SQL-first analytics + Python automation</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-indigo-600"></i>
+                    <span>Data modeling + metrics stakeholders trust</span>
+                  </div>
+                </div>
+
+                <div class="mt-5 grid grid-cols-2 gap-2">
+                  <a
+                    href="https://github.com/respin5757/streamwatch"
+                    target="_blank"
+                    class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+                    ><i class="fa-solid fa-tv mr-2 text-slate-600"></i>StreamWatch</a
+                  >
+                  <a
+                    href="https://github.com/respin5757/chicago-taxi-analysis"
+                    target="_blank"
+                    class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+                    ><i class="fa-solid fa-taxi mr-2 text-slate-600"></i>Smart Cabbie</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="mx-auto max-w-6xl px-4 py-10">
+        <div class="grid gap-8 md:grid-cols-12">
+          <div class="md:col-span-5">
+            <h2 class="text-2xl font-bold tracking-tight">About</h2>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              I’m a Computer Science graduate (Math minor) who enjoys building reliable analytics workflows:
+              validating messy inputs, modeling data into decision-ready tables, and delivering outputs that stakeholders can trust.
+              My current work focuses on high-accuracy, compliance-sensitive data delivery at scale.
+            </p>
+            <p class="mt-3 text-slate-700 leading-relaxed">
+              I’m targeting roles where I can own analytics foundations end-to-end:
+              <span class="font-semibold">data quality, transformation/modeling, and metrics</span>—and ship work that makes teams faster.
+            </p>
+          </div>
+
+          <div class="md:col-span-7">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm">
+                <div class="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                  <i class="fa-solid fa-shield-halved text-slate-700"></i> What I’m strongest at
+                </div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>SQL transformations + data validation checks</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Data modeling for clean metrics + reporting</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Automation-minded workflows (repeatable deliveries)</li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm">
+                <div class="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                  <i class="fa-solid fa-compass text-slate-700"></i> What I’m aiming for
+                </div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                  <li class="flex gap-2"><i class="fa-solid fa-arrow-right mt-1 text-indigo-600"></i>Analytics Engineer: modeling + pipelines + testing</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-arrow-right mt-1 text-indigo-600"></i>Data Analyst: insights + dashboards + stakeholders</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-arrow-right mt-1 text-indigo-600"></i>Hybrid roles bridging product & data</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="bg-white/70 border-y border-slate-200/70">
+        <div class="mx-auto max-w-6xl px-4 py-10">
+          <div class="flex items-end justify-between gap-4 flex-wrap">
+            <div>
+              <h2 class="text-2xl font-bold tracking-tight">Skills</h2>
+              <p class="mt-2 text-slate-600">Core tools I use for analytics, modeling, and production-minded delivery.</p>
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-database mr-2 text-slate-700"></i>Data & Query</div>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">SQL</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">BigQuery</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Data Modeling</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Data Quality</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">ETL / ELT</span>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-code mr-2 text-slate-700"></i>Engineering</div>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Python</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Airflow</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Docker</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Git</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">GCP</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Spark</span>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-chart-line mr-2 text-slate-700"></i>Analytics & BI</div>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Tableau</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Streamlit</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Excel</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">KPIs</span>
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Stakeholder Comms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="mx-auto max-w-6xl px-4 py-10">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div>
+            <h2 class="text-2xl font-bold tracking-tight">Projects</h2>
+            <p class="mt-2 text-slate-600">A few projects that best represent analytics engineering + data workflow ownership.</p>
+          </div>
           <a
-            href="#contact"
-            class="hover:underline hover:text-gray-300 transition duration-200"
-            >Contact</a
+            href="https://github.com/respin5757"
+            target="_blank"
+            class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
           >
-        </li>
-      </ul>
-    </nav>
-
-    <!-- ABOUT -->
-    <section id="about" class="py-10 text-center">
-      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
-      <div class="flex justify-center space-x-8 my-4">
-        <img
-          src="Boston_College_Eagles_logo.png"
-          alt="Boston College Logo"
-          class="w-20 h-auto object-contain"
-        />
-        <img
-          src="Guidehouse_Logo.png"
-          alt="Guidehouse Logo"
-          class="w-28 h-auto object-contain"
-        />
-      </div>
-      <p class="max-w-2xl mx-auto px-4 leading-relaxed">
-        I am a first-generation college graduate with a Bachelor of Science
-        in Computer Science and a minor in Mathematics from Boston College.
-        Currently, I work as a
-        <strong>Data Analytics Consultant at Guidehouse</strong>, where I
-        specialize in <strong>SQL, data cleaning, and financial data analysis</strong>.
-        I enjoy building reliable analytics workflows—cleaning and validating data,
-        modeling it into decision-ready datasets, and delivering outputs that stakeholders trust.
-        Fluent in Spanish and skilled in data analysis, visualization, and
-        machine learning, I have a passion for leveraging technology to
-        solve complex problems.
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="py-10 bg-gray-50">
-      <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
-      <div
-        class="max-w-6xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4"
-      >
-        <!-- STREAMWATCH (NEW) -->
-        <a
-          href="https://github.com/respin5757/streamwatch"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-tv text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">StreamWatch</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Built an end-to-end forecasting pipeline predicting weekly TV show popularity
-            across multiple horizons (ingestion → training → serving). Orchestrated Dockerized
-            Airflow retraining and published versioned datasets/models to Google Cloud Storage.
-            Implemented a manifest-driven training–serving contract and monitored RMSE/R² stability.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Python</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">SQL</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Airflow</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Docker</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">LightGBM</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">GCS</span>
-            <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">Streamlit</span>
-          </div>
-        </a>
-
-        <!-- SMART CABBIE -->
-        <a
-          href="https://github.com/respin5757/chicago-taxi-analysis"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-taxi text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">Smart Cabbie: Chicago Taxi Analysis</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Analyzed Chicago taxi data using SQL and Python, creating Tableau
-            dashboards to uncover trends and optimize operations. Engineered
-            KPIs like revenue per mile and tip percentage for strategic
-            insights.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >SQL</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >BigQuery</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Pandas</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Tableau</span
-            >
-          </div>
-        </a>
-
-        <!-- LARGE DATA PROCESSING -->
-        <a
-          href="https://github.com/george-arianas/Data-Processing-Final-Project"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-network-wired text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">Large Data Processing</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Explored large-scale data processing with distributed computing
-            for improved performance. Focused on algorithms and parallel
-            optimizations.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Scala</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Apache Spark</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Google Cloud</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Parallel Computing</span
-            >
-          </div>
-        </a>
-
-        <!-- SPOOTIFY -->
-        <a
-          href="https://github.com/respin5757/spootify"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-music text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">Spootify</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Built a Python application leveraging the Spotify API to analyze
-            user mood through song data. Achieved 82% accuracy in mood
-            prediction using RandomForestClassifier and created visualizations
-            with Matlab.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Python</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Pandas</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Machine Learning</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >sklearn</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >API Integration</span
-            >
-          </div>
-        </a>
-
-        <!-- ORIGAMI IN MODERN GEOMETRY -->
-        <a
-          href="BELOCH_FOLD.pdf"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-shapes text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">Origami in Modern Geometry</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Explored the mathematical applications of the Beloch Fold in
-            solving cubic equations. Combined theoretical research and
-            geometric demonstrations to integrate advanced concepts with
-            practical techniques.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Problem-Solving</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >LaTeX</span
-            >
-          </div>
-        </a>
-
-        <!-- NEW BOSTONIA -->
-        <a
-          href="https://github.com/respin5757/New_Bostonia"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-gamepad text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">New Bostonia</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Developed a text-based adventure game in Java featuring dynamic
-            scenarios, inventory management, and design patterns like
-            Singleton and Factory Method.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Java</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >OOP</span
-            >
-          </div>
-        </a>
-
-        <!-- FASHIONISTA -->
-        <a
-          href="https://github.com/GuralTOO/Magic_Mike"
-          target="_blank"
-          class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-shirt text-3xl text-gray-600"></i>
-            <h3 class="text-xl font-semibold">Fashionista</h3>
-          </div>
-          <p class="mt-2 text-sm">
-            Developed a script that trains an RCNN model to segment and
-            classify fashion items. This project involved data preprocessing,
-            model training, and result visualization, highlighting
-            collaboration and the application of machine learning techniques.
-          </p>
-          <div class="mt-3 space-x-2">
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Python</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Machine Learning</span
-            >
-            <span
-              class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full"
-              >Collaboration</span
-            >
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="py-10 bg-white text-center">
-      <h2 class="text-3xl font-semibold mb-6">Core Skills</h2>
-      <p class="max-w-xl mx-auto mb-4 px-4 text-gray-700">
-        Here are some of the most relevant skills for analytics engineering / data analytics work,
-        along with soft skills that round out my profile.
-      </p>
-
-      <div class="max-w-2xl mx-auto flex flex-wrap justify-center gap-2 px-4">
-        <!-- Hard Skills -->
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Python</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">SQL</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Data Modeling</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Data Quality</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">ETL / ELT</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">BigQuery</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Airflow</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Docker</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">dbt</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Tableau</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Excel</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Streamlit</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Machine Learning</span>
-
-        <!-- Soft Skills -->
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Problem Solving</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Collaboration</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Communication</span>
-        <span class="inline-block bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-full">Adaptability</span>
-      </div>
-    </section>
-
-    <!-- TIMELINE -->
-    <section id="timeline" class="py-10">
-      <h2 class="text-3xl font-semibold text-center mb-6">Timeline</h2>
-      <div class="max-w-4xl mx-auto px-4">
-        <ol class="relative border-l border-gray-200">
-          <!-- Boston College -->
-          <li class="mb-10 ml-6">
-            <span
-              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white"
-            >
-              <i class="fa-solid fa-university text-blue-600 text-sm"></i>
-            </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">
-              Boston College
-            </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
-              >August 2020 - May 2024</time
-            >
-            <p class="text-base text-gray-600">
-              Graduated with a BS in Computer Science and Minor in Math.
-              Involved as AV Tech &amp; in the CS Society.
-            </p>
-          </li>
-
-          <!-- Design Engineer Intern -->
-          <li class="mb-10 ml-6">
-            <span
-              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-purple-100 rounded-full ring-8 ring-white"
-            >
-              <i class="fa-solid fa-drafting-compass text-purple-600 text-sm"></i>
-            </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">
-              Design Engineer Intern
-            </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
-              >June 2021 - Aug 2021</time
-            >
-            <p class="text-base text-gray-600">
-              Advanced Paperworks Inc. Improved production designs with
-              AutoCAD, reducing QC errors by 20%.
-            </p>
-          </li>
-
-          <!-- Audio Visual Technician -->
-          <li class="mb-10 ml-6">
-            <span
-              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-green-100 rounded-full ring-8 ring-white"
-            >
-              <i class="fa-solid fa-video text-green-600 text-sm"></i>
-            </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">
-              Audio Visual Technician
-            </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
-              >Aug 2021 - May 2024</time
-            >
-            <p class="text-base text-gray-600">
-              Set up/dismantled AV equipment for events, diagnosing
-              technical issues for on-campus conferences.
-            </p>
-          </li>
-
-          <!-- Computer Science Society -->
-          <li class="mb-10 ml-6">
-            <span
-              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white"
-            >
-              <i class="fa-solid fa-users text-blue-600 text-sm"></i>
-            </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">
-              Computer Science Society
-            </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
-              >Aug 2021 - May 2024</time
-            >
-            <p class="text-base text-gray-600">
-              Marketing &amp; Sponsorship Coordinator. Organized hackathons &amp;
-              built sponsor relationships.
-            </p>
-          </li>
-
-          <!-- Guidehouse -->
-          <li class="mb-10 ml-6">
-            <span
-              class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-gray-100 rounded-full ring-8 ring-white"
-            >
-              <i class="fa-solid fa-briefcase text-gray-600 text-sm"></i>
-            </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900">
-              Data Analytics Consultant
-            </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400"
-              >Feb 2025 - Present</time
-            >
-            <p class="text-base text-gray-600">
-              Working at <strong>Guidehouse</strong> as a Data Analytics
-              Consultant, specializing in <strong>SQL, data cleaning,
-              and financial data analysis</strong>. Focused on improving
-              entity resolution processes and optimizing SQL workflows
-              for critical business audits.
-            </p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="py-10 bg-gray-50">
-      <h2 class="text-3xl font-semibold text-center mb-6">Certifications</h2>
-      <div class="max-w-3xl mx-auto px-4">
-        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
-          <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
-          <div>
-            <h3 class="font-semibold">Advanced SQL for Data Scientists</h3>
-            <p class="text-sm text-gray-600">Issued Oct 2024</p>
-            <p class="text-xs text-gray-500">Skills: SQL · Data Science</p>
-          </div>
+            <i class="fa-brands fa-github mr-2"></i>View all repos
+          </a>
         </div>
 
-        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
-          <i class="fa-brands fa-microsoft text-3xl text-blue-800 mr-4"></i>
-          <div>
-            <h3 class="font-semibold">
-              Career Essentials in Data Analysis by Microsoft and LinkedIn
-            </h3>
-            <p class="text-sm text-gray-600">Issued Oct 2024</p>
-            <p class="text-xs text-gray-500">
-              Skills: Data Visualization · Data Analysis · Financial Analysis ·
-              Data Analytics · Data Science · Microsoft Excel
+        <!-- Featured -->
+        <div class="mt-6 grid gap-4 lg:grid-cols-2">
+          <!-- StreamWatch -->
+          <a
+            href="https://github.com/respin5757/streamwatch"
+            target="_blank"
+            class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">
+                    <i class="fa-solid fa-tv"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold">StreamWatch</h3>
+                    <p class="text-sm text-slate-600">Forecasting pipeline • orchestration • versioned artifacts</p>
+                  </div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-slate-300 group-hover:text-slate-500"></i>
+            </div>
+
+            <p class="mt-4 text-sm leading-relaxed text-slate-700">
+              End-to-end pipeline forecasting weekly TV show popularity across multiple horizons (ingestion → training → serving).
+              Automated retraining via Dockerized Airflow, publishing versioned datasets/models to GCS. Includes a Streamlit dashboard
+              and model monitoring (RMSE/R²) for stability.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">SQL</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Airflow</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Docker</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">LightGBM</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">GCS</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Streamlit</span>
+            </div>
+          </a>
+
+          <!-- Smart Cabbie -->
+          <a
+            href="https://github.com/respin5757/chicago-taxi-analysis"
+            target="_blank"
+            class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-center gap-2">
+                <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white">
+                  <i class="fa-solid fa-taxi"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Smart Cabbie: Chicago Taxi Analytics</h3>
+                  <p class="text-sm text-slate-600">BigQuery + Python ETL • KPIs • Tableau dashboarding</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-slate-300 group-hover:text-slate-500"></i>
+            </div>
+
+            <p class="mt-4 text-sm leading-relaxed text-slate-700">
+              Queried and transformed 10M+ trip records with BigQuery SQL and Python-based ETL.
+              Modeled trip-level and aggregate metrics for demand patterns, revenue efficiency, and tipping behavior,
+              then shipped interactive Tableau dashboards and KPIs.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">BigQuery</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">SQL</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Python</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Pandas</span>
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">Tableau</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- More Projects -->
+        <div class="mt-8">
+          <h3 class="text-sm font-semibold text-slate-900">More</h3>
+          <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <a
+              href="https://github.com/george-arianas/Data-Processing-Final-Project"
+              target="_blank"
+              class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex items-center justify-between">
+                <div class="font-semibold"><i class="fa-solid fa-network-wired mr-2 text-slate-600"></i>Large Data Processing</div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Distributed computing + performance-minded processing (Spark/Scala).</p>
+            </a>
+
+            <a
+              href="https://github.com/respin5757/spootify"
+              target="_blank"
+              class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex items-center justify-between">
+                <div class="font-semibold"><i class="fa-solid fa-music mr-2 text-slate-600"></i>Spootify</div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Spotify API analysis + ML classification + visualizations.</p>
+            </a>
+
+            <a
+              href="BELOCH_FOLD.pdf"
+              target="_blank"
+              class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex items-center justify-between">
+                <div class="font-semibold"><i class="fa-solid fa-shapes mr-2 text-slate-600"></i>Origami in Modern Geometry</div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Beloch Fold exploration for solving cubic equations.</p>
+            </a>
+
+            <a
+              href="https://github.com/respin5757/New_Bostonia"
+              target="_blank"
+              class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex items-center justify-between">
+                <div class="font-semibold"><i class="fa-solid fa-gamepad mr-2 text-slate-600"></i>New Bostonia</div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Java text adventure with design patterns + inventory systems.</p>
+            </a>
+
+            <a
+              href="https://github.com/GuralTOO/Magic_Mike"
+              target="_blank"
+              class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex items-center justify-between">
+                <div class="font-semibold"><i class="fa-solid fa-shirt mr-2 text-slate-600"></i>Fashionista</div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-slate-300"></i>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">RCNN segmentation/classification pipeline (ML + preprocessing).</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="bg-white/70 border-y border-slate-200/70">
+        <div class="mx-auto max-w-6xl px-4 py-10">
+          <h2 class="text-2xl font-bold tracking-tight">Experience</h2>
+          <p class="mt-2 text-slate-600">
+            Production delivery, data quality, and high-accuracy validation in regulated environments.
+          </p>
+
+          <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <div class="flex items-center gap-2">
+                  <img src="Guidehouse_Logo.png" alt="Guidehouse Logo" class="h-6 w-auto object-contain" />
+                  <h3 class="text-lg font-bold">Data Analytics Consultant</h3>
+                </div>
+                <p class="text-sm text-slate-600">Guidehouse • Boston, MA • Feb 2025 — Present</p>
+              </div>
+
+              <a
+                href="Espinoza_Rafael.Resume.pdf"
+                target="_blank"
+                class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
+              >
+                <i class="fa-regular fa-file-lines mr-2"></i>See resume details
+              </a>
+            </div>
+
+            <div class="mt-5 grid gap-4 md:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-gears mr-2 text-slate-700"></i>Core impact</div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Automated batch workflows processing 3M+ records/month across 9 clients</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Reduced data delivery turnaround by ~70% for audit/compliance workflows</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Built SQL transformations + data quality checks, reducing errors by ~30%</li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-shield mr-2 text-slate-700"></i>Accuracy & validation</div>
+                <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Implemented confidence-based matching and validation logic across authoritative sources</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Customized thresholds per client to balance false positives/negatives</li>
+                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Delivered audit-ready datasets with reconciliation metrics and confidence scoring</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="mt-4 text-xs text-slate-500">
+              Note: Metrics and scope are aligned to resume statements.
             </p>
           </div>
         </div>
+      </section>
 
-        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
-          <i class="fa-solid fa-chart-bar text-3xl text-purple-500 mr-4"></i>
-          <div>
-            <h3 class="font-semibold">Tableau Essential Training</h3>
-            <p class="text-sm text-gray-600">Issued Oct 2024</p>
-            <p class="text-xs text-gray-500">Skills: Tableau · Data Science</p>
+      <!-- EDUCATION + CERTS -->
+      <section id="education" class="mx-auto max-w-6xl px-4 py-10">
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-3">
+              <img src="Boston_College_Eagles_logo.png" alt="Boston College Logo" class="h-9 w-auto object-contain" />
+              <div>
+                <h2 class="text-xl font-bold tracking-tight">Education</h2>
+                <p class="text-sm text-slate-600">Boston College • B.S. Computer Science • Math Minor</p>
+              </div>
+            </div>
+            <div class="mt-4 text-sm text-slate-700">
+              Graduated May 2024. Foundation in CS fundamentals, systems thinking, and quantitative reasoning.
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-bold tracking-tight">Certifications</h2>
+            <div class="mt-4 space-y-3 text-sm text-slate-700">
+              <div class="flex items-start gap-3">
+                <i class="fa-brands fa-microsoft mt-1 text-blue-700"></i>
+                <div>
+                  <div class="font-semibold">Microsoft Career Essentials in Data Analysis</div>
+                  <div class="text-xs text-slate-500">Issued Oct 2024</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-brands fa-linkedin mt-1 text-blue-600"></i>
+                <div>
+                  <div class="font-semibold">Advanced SQL for Data Scientists</div>
+                  <div class="text-xs text-slate-500">Issued Oct 2024</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-chart-simple mt-1 text-indigo-600"></i>
+                <div>
+                  <div class="font-semibold">Tableau Essential Training</div>
+                  <div class="text-xs text-slate-500">Issued Oct 2024</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa-brands fa-python mt-1 text-slate-700"></i>
+                <div>
+                  <div class="font-semibold">Python Data Structures and Algorithms</div>
+                  <div class="text-xs text-slate-500">Issued Feb 2023</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="bg-white p-4 mb-4 rounded shadow-sm flex items-center">
-          <i class="fa-brands fa-linkedin text-3xl text-blue-600 mr-4"></i>
-          <div>
-            <h3 class="font-semibold">Python Data Structures and Algorithms</h3>
-            <p class="text-sm text-gray-600">Issued Feb 2023</p>
-            <p class="text-xs text-gray-500">Skills: Algorithms · Data Structures</p>
+      <!-- CONTACT -->
+      <section id="contact" class="pb-12">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-r from-slate-900 to-slate-800 p-6 shadow-sm">
+            <div class="grid gap-6 md:grid-cols-3 md:items-center">
+              <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold text-white">Let’s connect</h2>
+                <p class="mt-2 text-slate-200">
+                  If you’re hiring for data analyst / analytics engineer roles, I’d love to chat.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2 md:justify-end">
+                <a
+                  href="mailto:rafa3l.espinoza@gmail.com"
+                  class="inline-flex items-center rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-100"
+                >
+                  <i class="fa-regular fa-envelope mr-2"></i>Email
+                </a>
+                <a
+                  href="https://linkedin.com/in/rafael-espinoza-2001/"
+                  target="_blank"
+                  class="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
+                >
+                  <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn
+                </a>
+                <a
+                  href="https://github.com/respin5757"
+                  target="_blank"
+                  class="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
+                >
+                  <i class="fa-brands fa-github mr-2"></i>GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-5 flex flex-wrap gap-3 text-sm text-slate-200">
+              <span><i class="fa-solid fa-location-dot mr-2"></i>Cambridge, MA</span>
+              <span><i class="fa-solid fa-phone mr-2"></i>(915) 222-9927</span>
+              <span><i class="fa-solid fa-language mr-2"></i>English (Bilingual), Spanish (Native)</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer id="contact" class="bg-gray-800 text-white py-6 text-center mt-10">
-      <p class="mb-2">
-        Contact:
-        <a
-          href="mailto:rafa3l.espinoza@gmail.com"
-          class="underline hover:text-gray-400 transition"
-          >rafa3l.espinoza@gmail.com</a
-        >
-      </p>
-      <p>
-        <a
-          href="https://linkedin.com/in/rafael-espinoza-2001/"
-          class="underline hover:text-gray-400 transition"
-          >LinkedIn</a
-        >
-        |
-        <a
-          href="https://github.com/respin5757"
-          class="underline hover:text-gray-400 transition"
-          >GitHub</a
-        >
-      </p>
-    </footer>
+          <footer class="mt-6 text-center text-xs text-slate-500">
+            © <span id="year"></span> Rafael Espinoza • Built with HTML + Tailwind
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Auto-update footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
