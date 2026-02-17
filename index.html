@@ -24,14 +24,36 @@
       html {
         scroll-behavior: smooth;
       }
+
       /* Subtle, professional background texture */
       .bg-grid {
         background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
         background-size: 18px 18px;
       }
+
       /* Better anchor positioning with sticky nav */
       section {
         scroll-margin-top: 90px;
+      }
+
+      /* Nav underline animation */
+      .navlink {
+        position: relative;
+        padding: 10px 2px;
+      }
+      .navlink:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        height: 2px;
+        width: 0%;
+        background: rgb(15 23 42);
+        transition: width 200ms ease;
+        opacity: 0.7;
+      }
+      .navlink:hover:after {
+        width: 100%;
       }
     </style>
   </head>
@@ -51,12 +73,12 @@
         </a>
 
         <nav class="hidden items-center gap-5 md:flex">
-          <a href="#about" class="text-sm text-slate-600 hover:text-slate-900">About</a>
-          <a href="#skills" class="text-sm text-slate-600 hover:text-slate-900">Skills</a>
-          <a href="#projects" class="text-sm text-slate-600 hover:text-slate-900">Projects</a>
-          <a href="#experience" class="text-sm text-slate-600 hover:text-slate-900">Experience</a>
-          <a href="#education" class="text-sm text-slate-600 hover:text-slate-900">Education</a>
-          <a href="#contact" class="text-sm text-slate-600 hover:text-slate-900">Contact</a>
+          <a href="#about" class="navlink text-sm text-slate-600 hover:text-slate-900">About</a>
+          <a href="#skills" class="navlink text-sm text-slate-600 hover:text-slate-900">Skills</a>
+          <a href="#projects" class="navlink text-sm text-slate-600 hover:text-slate-900">Projects</a>
+          <a href="#experience" class="navlink text-sm text-slate-600 hover:text-slate-900">Experience</a>
+          <a href="#education" class="navlink text-sm text-slate-600 hover:text-slate-900">Education</a>
+          <a href="#contact" class="navlink text-sm text-slate-600 hover:text-slate-900">Contact</a>
         </nav>
 
         <div class="flex items-center gap-2">
@@ -64,13 +86,15 @@
             href="Espinoza_Rafael.Resume.pdf"
             target="_blank"
             class="hidden rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50 md:inline-flex"
-            ><i class="fa-regular fa-file-lines mr-2"></i>Resume</a
+            ><span class="inline-flex w-5 justify-center mr-2"><i class="fa-regular fa-file-lines"></i></span
+            >Resume</a
           >
           <a
             href="https://github.com/respin5757"
             target="_blank"
             class="inline-flex rounded-lg bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
-            ><i class="fa-brands fa-github mr-2"></i>GitHub</a
+            ><span class="inline-flex w-5 justify-center mr-2"><i class="fa-brands fa-github"></i></span
+            >GitHub</a
           >
         </div>
       </div>
@@ -98,13 +122,17 @@
     <main id="top" class="bg-grid">
       <section class="relative overflow-hidden">
         <div class="absolute inset-0 -z-10">
-          <div class="absolute -top-32 left-1/2 h-72 w-[44rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-sky-200 via-indigo-200 to-emerald-200 blur-3xl opacity-70"></div>
+          <div
+            class="absolute -top-32 left-1/2 h-72 w-[44rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-sky-200 via-indigo-200 to-emerald-200 blur-3xl opacity-70"
+          ></div>
         </div>
 
         <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
           <div class="grid gap-10 md:grid-cols-12 md:items-center">
             <div class="md:col-span-8">
-              <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700">
+              <div
+                class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-semibold text-slate-700"
+              >
                 <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
                 Open to Data Analyst / Analytics Engineer roles
               </div>
@@ -115,22 +143,22 @@
               </h1>
 
               <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-700 md:text-lg">
-                Data Analytics Consultant at Guidehouse with strong <span class="font-semibold">SQL + Python</span> fundamentals and hands-on ownership of
-                <span class="font-semibold">data ingestion, validation, modeling, and delivery</span> under accuracy and compliance constraints.
+                Data Analytics Consultant at Guidehouse with strong <span class="font-semibold">SQL + Python</span> fundamentals and hands-on ownership
+                of <span class="font-semibold">data ingestion, validation, modeling, and delivery</span> under accuracy and compliance constraints.
               </p>
 
               <div class="mt-6 grid gap-3 sm:grid-cols-3">
-                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                <div class="rounded-2xl border border-slate-200/70 bg-white/85 p-4 shadow-sm min-h-[88px]">
                   <div class="text-sm font-semibold text-slate-900">3M+ records / month</div>
                   <div class="text-xs text-slate-600">Batch workflows across 9 clients</div>
                 </div>
-                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                <div class="rounded-2xl border border-slate-200/70 bg-white/85 p-4 shadow-sm min-h-[88px]">
                   <div class="text-sm font-semibold text-slate-900">70% faster delivery</div>
                   <div class="text-xs text-slate-600">Audit/compliance turnaround</div>
                 </div>
-                <div class="rounded-xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                <div class="rounded-2xl border border-slate-200/70 bg-white/85 p-4 shadow-sm min-h-[88px]">
                   <div class="text-sm font-semibold text-slate-900">99% accuracy</div>
-                  <div class="text-xs text-slate-600">Entity matching validation logic</div>
+                  <div class="text-xs text-slate-600">Matching validation logic</div>
                 </div>
               </div>
 
@@ -140,30 +168,36 @@
                   target="_blank"
                   class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
                 >
-                  <i class="fa-regular fa-file-lines mr-2"></i>View Resume
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-regular fa-file-lines"></i></span>
+                  View Resume
                 </a>
                 <a
                   href="https://linkedin.com/in/rafael-espinoza-2001/"
                   target="_blank"
                   class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
                 >
-                  <i class="fa-brands fa-linkedin mr-2 text-blue-600"></i>LinkedIn
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-brands fa-linkedin text-blue-600"></i></span>
+                  LinkedIn
                 </a>
                 <a
                   href="#projects"
                   class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
                 >
-                  <i class="fa-solid fa-diagram-project mr-2 text-slate-600"></i>Projects
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-solid fa-diagram-project text-slate-600"></i></span>
+                  Projects
                 </a>
               </div>
 
-              <div class="mt-6 flex items-center gap-4">
-                <div class="flex items-center gap-3">
-                  <img src="Boston_College_Eagles_logo.png" alt="Boston College Logo" class="h-8 w-auto object-contain" />
-                  <img src="Guidehouse_Logo.png" alt="Guidehouse Logo" class="h-7 w-auto object-contain" />
+              <div class="mt-6 flex flex-wrap items-center gap-4">
+                <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white/70 px-3 py-2 shadow-sm">
+                  <img src="Boston_College_Eagles_logo.png" alt="Boston College Logo" class="h-7 w-auto object-contain" />
+                  <div class="h-5 w-px bg-slate-200"></div>
+                  <img src="Guidehouse_Logo.png" alt="Guidehouse Logo" class="h-6 w-auto object-contain" />
                 </div>
+
                 <div class="text-sm text-slate-600">
-                  Cambridge, MA • <a class="underline hover:text-slate-900" href="mailto:rafa3l.espinoza@gmail.com">rafa3l.espinoza@gmail.com</a>
+                  Cambridge, MA •
+                  <a class="underline hover:text-slate-900" href="mailto:rafa3l.espinoza@gmail.com">rafa3l.espinoza@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -221,9 +255,9 @@
           <div class="md:col-span-5">
             <h2 class="text-2xl font-bold tracking-tight">About</h2>
             <p class="mt-3 text-slate-700 leading-relaxed">
-              I’m a Computer Science graduate (Math minor) who enjoys building reliable analytics workflows:
-              validating messy inputs, modeling data into decision-ready tables, and delivering outputs that stakeholders can trust.
-              My current work focuses on high-accuracy, compliance-sensitive data delivery at scale.
+              I’m a Computer Science graduate (Math minor) who enjoys building reliable analytics workflows: validating messy inputs, modeling data into
+              decision-ready tables, and delivering outputs that stakeholders can trust. My current work focuses on high-accuracy, compliance-sensitive data
+              delivery at scale.
             </p>
             <p class="mt-3 text-slate-700 leading-relaxed">
               I’m targeting roles where I can own analytics foundations end-to-end:
@@ -271,7 +305,9 @@
 
           <div class="mt-6 grid gap-4 md:grid-cols-3">
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-database mr-2 text-slate-700"></i>Data & Query</div>
+              <div class="text-sm font-semibold text-slate-900">
+                <i class="fa-solid fa-database mr-2 text-slate-700"></i>Data & Query
+              </div>
               <div class="mt-3 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">SQL</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">BigQuery</span>
@@ -282,7 +318,9 @@
             </div>
 
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-code mr-2 text-slate-700"></i>Engineering</div>
+              <div class="text-sm font-semibold text-slate-900">
+                <i class="fa-solid fa-code mr-2 text-slate-700"></i>Engineering
+              </div>
               <div class="mt-3 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Python</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Airflow</span>
@@ -294,7 +332,9 @@
             </div>
 
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-chart-line mr-2 text-slate-700"></i>Analytics & BI</div>
+              <div class="text-sm font-semibold text-slate-900">
+                <i class="fa-solid fa-chart-line mr-2 text-slate-700"></i>Analytics & BI
+              </div>
               <div class="mt-3 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Tableau</span>
                 <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Streamlit</span>
@@ -347,9 +387,8 @@
             </div>
 
             <p class="mt-4 text-sm leading-relaxed text-slate-700">
-              End-to-end pipeline forecasting weekly TV show popularity across multiple horizons (ingestion → training → serving).
-              Automated retraining via Dockerized Airflow, publishing versioned datasets/models to GCS. Includes a Streamlit dashboard
-              and model monitoring (RMSE/R²) for stability.
+              End-to-end pipeline forecasting weekly TV show popularity across multiple horizons (ingestion → training → serving). Automated retraining via
+              Dockerized Airflow, publishing versioned datasets/models to GCS. Includes a Streamlit dashboard and model monitoring (RMSE/R²) for stability.
             </p>
 
             <div class="mt-4 flex flex-wrap gap-2">
@@ -383,9 +422,8 @@
             </div>
 
             <p class="mt-4 text-sm leading-relaxed text-slate-700">
-              Queried and transformed 10M+ trip records with BigQuery SQL and Python-based ETL.
-              Modeled trip-level and aggregate metrics for demand patterns, revenue efficiency, and tipping behavior,
-              then shipped interactive Tableau dashboards and KPIs.
+              Queried and transformed 10M+ trip records with BigQuery SQL and Python-based ETL. Modeled trip-level and aggregate metrics for demand patterns,
+              revenue efficiency, and tipping behavior, then shipped interactive Tableau dashboards and KPIs.
             </p>
 
             <div class="mt-4 flex flex-wrap gap-2">
@@ -469,9 +507,7 @@
       <section id="experience" class="bg-white/70 border-y border-slate-200/70">
         <div class="mx-auto max-w-6xl px-4 py-10">
           <h2 class="text-2xl font-bold tracking-tight">Experience</h2>
-          <p class="mt-2 text-slate-600">
-            Production delivery, data quality, and high-accuracy validation in regulated environments.
-          </p>
+          <p class="mt-2 text-slate-600">Production delivery, data quality, and high-accuracy validation in regulated environments.</p>
 
           <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div class="flex flex-wrap items-start justify-between gap-3">
@@ -488,7 +524,8 @@
                 target="_blank"
                 class="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
               >
-                <i class="fa-regular fa-file-lines mr-2"></i>See resume details
+                <span class="inline-flex w-5 justify-center mr-2"><i class="fa-regular fa-file-lines"></i></span>
+                See resume details
               </a>
             </div>
 
@@ -496,25 +533,35 @@
               <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
                 <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-gears mr-2 text-slate-700"></i>Core impact</div>
                 <ul class="mt-3 space-y-2 text-sm text-slate-700">
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Automated batch workflows processing 3M+ records/month across 9 clients</li>
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Reduced data delivery turnaround by ~70% for audit/compliance workflows</li>
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-emerald-600"></i>Built SQL transformations + data quality checks, reducing errors by ~30%</li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-emerald-600"></i>Automated batch workflows processing 3M+ records/month across 9 clients
+                  </li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-emerald-600"></i>Reduced data delivery turnaround by ~70% for audit/compliance workflows
+                  </li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-emerald-600"></i>Built SQL transformations + data quality checks, reducing errors by ~30%
+                  </li>
                 </ul>
               </div>
 
               <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
                 <div class="text-sm font-semibold text-slate-900"><i class="fa-solid fa-shield mr-2 text-slate-700"></i>Accuracy & validation</div>
                 <ul class="mt-3 space-y-2 text-sm text-slate-700">
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Implemented confidence-based matching and validation logic across authoritative sources</li>
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Customized thresholds per client to balance false positives/negatives</li>
-                  <li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-indigo-600"></i>Delivered audit-ready datasets with reconciliation metrics and confidence scoring</li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-indigo-600"></i>Implemented confidence-based matching and validation logic across authoritative sources
+                  </li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-indigo-600"></i>Customized thresholds per client to balance false positives/negatives
+                  </li>
+                  <li class="flex gap-2">
+                    <i class="fa-solid fa-check mt-1 text-indigo-600"></i>Delivered audit-ready datasets with reconciliation metrics and confidence scoring
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <p class="mt-4 text-xs text-slate-500">
-              Note: Metrics and scope are aligned to resume statements.
-            </p>
+            <p class="mt-4 text-xs text-slate-500">Note: Metrics and scope are aligned to resume statements.</p>
           </div>
         </div>
       </section>
@@ -578,9 +625,7 @@
             <div class="grid gap-6 md:grid-cols-3 md:items-center">
               <div class="md:col-span-2">
                 <h2 class="text-2xl font-bold text-white">Let’s connect</h2>
-                <p class="mt-2 text-slate-200">
-                  If you’re hiring for data analyst / analytics engineer roles, I’d love to chat.
-                </p>
+                <p class="mt-2 text-slate-200">If you’re hiring for data analyst / analytics engineer roles, I’d love to chat.</p>
               </div>
 
               <div class="flex flex-wrap gap-2 md:justify-end">
@@ -588,21 +633,24 @@
                   href="mailto:rafa3l.espinoza@gmail.com"
                   class="inline-flex items-center rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 hover:bg-slate-100"
                 >
-                  <i class="fa-regular fa-envelope mr-2"></i>Email
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-regular fa-envelope"></i></span>
+                  Email
                 </a>
                 <a
                   href="https://linkedin.com/in/rafael-espinoza-2001/"
                   target="_blank"
                   class="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
                 >
-                  <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-brands fa-linkedin"></i></span>
+                  LinkedIn
                 </a>
                 <a
                   href="https://github.com/respin5757"
                   target="_blank"
                   class="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
                 >
-                  <i class="fa-brands fa-github mr-2"></i>GitHub
+                  <span class="inline-flex w-5 justify-center mr-2"><i class="fa-brands fa-github"></i></span>
+                  GitHub
                 </a>
               </div>
             </div>
@@ -622,6 +670,22 @@
     </main>
 
     <script>
+      // Smooth scroll with sticky-header offset
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          if (!id || id === "#") return;
+          const el = document.querySelector(id);
+          if (!el) return;
+
+          e.preventDefault();
+          const yOffset = 80; // sticky header height
+          const y = el.getBoundingClientRect().top + window.pageYOffset - yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      });
+
       // Auto-update footer year
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
